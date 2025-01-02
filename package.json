@@ -5,6 +5,7 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "dev-ts": "nodemon src/index.ts",
     "format": "prettier . --write"
   },
   "keywords": [],
@@ -12,8 +13,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cookie-session": "^2.1.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
@@ -21,7 +24,8 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
     "socket.io": "^4.8.1",
-    "uuid": "^11.0.3"
+    "uuid": "^11.0.3",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
