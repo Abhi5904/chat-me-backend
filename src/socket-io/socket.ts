@@ -8,6 +8,7 @@ const initializeSocket = (server) => {
     cors: {
       origin: ['http://localhost:3000', 'https://chat-me-frontend.vercel.app'], // Adjust based on your frontend URL
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+      credentials: true,
     },
   });
   console.log('Socket.IO initialized');
