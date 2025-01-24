@@ -21,7 +21,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', 'https://chat-me-frontend.vercel.app/'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Custom-Header'],
     exposedHeaders: ['Authorization', 'X-Custom-Header'],
