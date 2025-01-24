@@ -22,6 +22,7 @@ const initializeSocket = (server) => {
 
     socket.on('disconnect', () => {
       console.log('Client disconnected:', socket.id);
+      socket.removeAllListeners();
     });
 
     socket.on('connect_error', (error) => {
