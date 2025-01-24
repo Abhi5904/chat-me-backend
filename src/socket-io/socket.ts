@@ -12,11 +12,9 @@ const initializeSocket = (server) => {
       credentials: true,
     },
     path: '/socket',
-    wsEngine: ['ws', 'wss'],
     allowEIO3: true,
     pingTimeout: 60000,
     connectTimeout: 60000,
-    // Add transport options
     transports: ['websocket', 'polling'],
   });
   io.on('connection', (socket) => {
