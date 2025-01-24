@@ -6,7 +6,11 @@ let io;
 const initializeSocket = (server) => {
   io = new Server(server, {
     cors: {
-      origin: ['http://localhost:3000', 'https://chat-me-frontend.vercel.app'], // Adjust based on your frontend URL
+      origin: [
+        'http://localhost:3000',
+        'https://chat-me-frontend.vercel.app',
+        'https://chat-me-backend-theta.vercel.app',
+      ], // Adjust based on your frontend URL
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
       credentials: true,
     },
